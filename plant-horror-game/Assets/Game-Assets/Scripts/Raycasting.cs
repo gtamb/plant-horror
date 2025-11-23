@@ -4,6 +4,7 @@ public class Raycasting : MonoBehaviour
 {
     public static float distanceFromTarget;
     [SerializeField] float toTarget;
+    public static string layerName; 
 
     void Update()
     {
@@ -12,6 +13,10 @@ public class Raycasting : MonoBehaviour
         {
             toTarget = hit.distance;
             distanceFromTarget = hit.distance;
+
+            int hitLayer = hit.collider.gameObject.layer;
+            layerName = LayerMask.LayerToName(hitLayer);
+
         }
     }
 }

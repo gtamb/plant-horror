@@ -16,7 +16,7 @@ public class InteractWithObjs : MonoBehaviour
             // display prompt to consume object
 
             // check for button press
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Raycasting.layerName == "Specimen" &&Input.GetKeyDown(KeyCode.E))
             {
                 isConsumed = true;
                 ConsumeObject();
