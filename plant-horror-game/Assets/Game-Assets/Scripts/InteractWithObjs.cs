@@ -2,16 +2,16 @@ using UnityEngine;
 using TMPro;
 public class InteractWithObjs : MonoBehaviour
 {
-   [SerializeField] float internalDistance;
+   [SerializeField] float cInternalDistance;
    [SerializeField] bool isConsumed = false; // for the consumable specimens
    void Update()
     {
         // check for distance to consumable objects 
         // if internal distance and button pressed consume object
-        internalDistance = Raycasting.distanceFromTarget;
+        cInternalDistance = Raycasting.distanceFromTarget;
         //check if internal distance is within bounds
-
-        if (isConsumed == false && internalDistance < 4.0f)
+        // !! need to check that the object being looked at is consumable !!
+        if (isConsumed == false && cInternalDistance < 2.0f)
         {
             // display prompt to consume object
 
