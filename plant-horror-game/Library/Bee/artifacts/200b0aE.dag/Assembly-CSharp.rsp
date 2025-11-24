@@ -439,6 +439,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.2.12f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.2.12f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Game-Assets/Scripts/FireController.cs"
+"Assets/Game-Assets/Scripts/GameUIManager.cs"
 "Assets/Game-Assets/Scripts/InteractWithObjs.cs"
 "Assets/Game-Assets/Scripts/PlayerHealth.cs"
 "Assets/Game-Assets/Scripts/PlayerMovement.cs"
