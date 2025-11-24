@@ -56,7 +56,6 @@ public class SwitchCameras : MonoBehaviour
         if (KeypadUnlocked == false && internalDistance < 4.0f)
         {
             // switch to keypad camera
-            Debug.Log(Raycasting.layerName);
             // NOTE: collider for keypad object is not viewable from ground in testing so temp collider
             if (Raycasting.layerName == "Keypad" && Input.GetKeyDown(KeyCode.E))
             {
