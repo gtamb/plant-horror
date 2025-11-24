@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class InteractWithObjs : MonoBehaviour
 {
    [SerializeField] float cInternalDistance;
@@ -64,6 +65,13 @@ public class InteractWithObjs : MonoBehaviour
             pm.sTwoConsumed = true;
             // apply specimen 2 effects
             Debug.Log("Specimen 2 Consumed");
+        }
+        else if(hitTag == "specimen-three")
+        {
+            // apply specimen 3 effects
+            Debug.Log("Specimen 3 Consumed");
+            // maybe more effects for being eaten later
+            SceneManager.LoadScene("EndScene");
         }
 
 

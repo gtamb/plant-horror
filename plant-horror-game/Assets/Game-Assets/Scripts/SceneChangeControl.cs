@@ -8,10 +8,7 @@ public class SceneChangeControl : MonoBehaviour
     // start with adding the first lab scene to the player scene
     private bool foundKCam;
     //public string sceneName;
-    public void Start()
-    {
-        LoadScene("Lab-Scene");
-    }
+
     // call with correct 
     public void LoadScene(string sceneName)
     {

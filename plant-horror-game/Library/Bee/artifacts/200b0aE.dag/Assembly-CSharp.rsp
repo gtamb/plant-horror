@@ -446,6 +446,7 @@
 "Assets/Game-Assets/Scripts/Raycasting.cs"
 "Assets/Game-Assets/Scripts/SceneChangeControl.cs"
 "Assets/Game-Assets/Scripts/SwitchCameras.cs"
+"Assets/Game-Assets/Scripts/UIManager.cs"
 "Assets/Keypad/Scripts/Keypad.cs"
 "Assets/Keypad/Scripts/KeypadButton.cs"
 "Assets/Keypad/Scripts/KeypadInteractionFPV.cs"

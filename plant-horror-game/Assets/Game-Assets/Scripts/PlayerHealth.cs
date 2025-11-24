@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
@@ -27,6 +27,11 @@ public class PlayerHealth : MonoBehaviour
                 coolDownTime = 2.0f; // reset cooldown timer
             }
         }
+        if (curHealth == 0)
+        {
+            Debug.Log("Player has died.");
+            SceneManager.LoadScene("RestartGame");
+        }
         
     }
 
@@ -42,7 +47,11 @@ public class PlayerHealth : MonoBehaviour
             {
                 // Handle player death TBD
                 Debug.Log(gameObject.name + " has died.");
-                Destroy(gameObject);
+                SceneManager.LoadScene("RestartGame");
+                SceneManager.UnloadSceneAsync("Player");
+                //SceneManager.UnloadSceneAsync("Lab-Scene");
+
+             //   Destroy(gameObject);
             }
         }
     }

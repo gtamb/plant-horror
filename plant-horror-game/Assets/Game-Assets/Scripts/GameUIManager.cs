@@ -22,7 +22,7 @@ public class GameUIManager : MonoBehaviour
         float healthPercent = Mathf.Lerp(0, 100, healthRatio);
         healthBarMask.style.width = Length.Percent(healthPercent);
 
-        healthLabel.text = $"{ph.curHealth}/{ph.maxHealth}";
+        //healthLabel.text = $"{ph.curHealth}/{ph.maxHealth}";
 
     }
 }

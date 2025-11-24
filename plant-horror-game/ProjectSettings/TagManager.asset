@@ -8,6 +8,7 @@ TagManager:
   - keypad-cam
   - specimen-one
   - specimen-two
+  - specimen-three
   layers:
   - Default
   - TransparentFX
