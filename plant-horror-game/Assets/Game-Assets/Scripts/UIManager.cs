@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
     {
         SceneManager.LoadScene("Player");
         SceneManager.LoadScene("Lab-Scene", LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync("MainMenu");
+       // SceneManager.UnloadSceneAsync("MainMenu");
     }
 
     // Update is called once per frame

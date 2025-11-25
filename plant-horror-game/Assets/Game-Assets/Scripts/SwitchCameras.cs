@@ -80,6 +80,11 @@ public class SwitchCameras : MonoBehaviour
             
     }
 
+    public void ClearKeypadCam()
+    {
+        keypadCamera = null;
+    }
+
     // when to switch back to main camera? 
     // when close enough to keypad and pressing the Q button
 }

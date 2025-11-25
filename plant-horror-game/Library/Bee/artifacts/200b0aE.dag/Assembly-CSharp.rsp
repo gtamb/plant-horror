@@ -441,6 +441,7 @@
 "Assets/Game-Assets/Scripts/FireController.cs"
 "Assets/Game-Assets/Scripts/GameUIManager.cs"
 "Assets/Game-Assets/Scripts/InteractWithObjs.cs"
+"Assets/Game-Assets/Scripts/LevelManager.cs"
 "Assets/Game-Assets/Scripts/PlayerHealth.cs"
 "Assets/Game-Assets/Scripts/PlayerMovement.cs"
 "Assets/Game-Assets/Scripts/Raycasting.cs"
