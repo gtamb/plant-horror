@@ -64,7 +64,7 @@ public class InteractWithObjs : MonoBehaviour
     public void ConsumeObject(string hitTag)
     {
     //    Debug.Log("Object Consumed", string(hitTag));
-
+        pm.GetComponent<AudioSource>().Play();
         if (hitTag == "specimen-one")
         {
             

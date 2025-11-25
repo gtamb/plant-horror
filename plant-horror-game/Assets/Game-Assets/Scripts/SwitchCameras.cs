@@ -19,20 +19,6 @@ public class SwitchCameras : MonoBehaviour
        // keypadCamera = GameObject.FindWithTag("keypad-cam"); // took out because of how scene setup works
         
     }
-
-    // call when additively loading the levels
-    // public bool GetKeypadCamera()
-    // {
-    //     keypadCamera = GameObject.Find("keypad-cam").GetComponent<Camera>();
-
-    //     if (keypadCamera == null)
-    //     {
-    //         Debug.LogWarning("Keypad camera not found in the scene.");
-    //         return false;
-    //     }
-    //     return true;
-    // }
-
     public void SwitchToKeypadCamera(bool switchToKeypad)
     {
         // switch to keypad is true when mainCamera is enable and false otherwise
