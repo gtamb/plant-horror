@@ -35,72 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
     }
-
-    // void Update()
-    // {
-    //     groundedPlayer = controller.isGrounded;
-    //     if (groundedPlayer && playerVelocity.y < 0)
-    //     {
-    //         playerVelocity.y = 0f; // Reset vertical velocity if grounded and moving downwards
-    //     }
-        
-    //     this.rotation = new Vector3(0, Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime, 0);
-
-    //     Vector3 move = new Vector3(0, 0, Input.GetAxisRaw("Vertical") * Time.deltaTime);
-    //     move = this.transform.TransformDirection(move);
-    //    // playerVelocity += move * playerSpeed;
-    //     controller.Move(move * playerSpeed);
-    //     this.transform.Rotate(this.rotation);
-
-    //     // Get Input for movement
-    //     // Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-    //     // controller.Move(move * playerSpeed * Time.deltaTime);
-
-    //     // Apply rotation based on movement direction
-    //     // if (move != Vector3.zero)
-    //     // {
-    //     //     gameObject.transform.forward = move;
-    //     // }
-
-    //     //update for specimen 2 consumption
-    //     maxJumpCount = sOneConsumed ?2:1;
-
-    //     if (groundedPlayer)
-    //     {
-    //         jumpCount = 0; // Reset jump count when grounded
-    //     }
-    //     // Handle Jumping
-    //     if (Input.GetButtonDown("Jump") && (groundedPlayer || jumpCount < maxJumpCount))
-    //     {
-
-    //         playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-    //         jumpCount++; 
-    //     }
-
-    //     // Apply Gravity
-    //     playerVelocity.y += gravityValue * Time.deltaTime;
-
-    //     //Specimen 2 glide effect
-
-    //     bool isGliding = sTwoConsumed && Input.GetKey(KeyCode.LeftShift) && !groundedPlayer && playerVelocity.y <0f;
-
-    //     float appliedGrav = isGliding ? gravityValue * glideGravMultiplier : gravityValue;
-
-    //     playerVelocity.y += appliedGrav * Time.deltaTime;
-
-    //     Vector3 propulsion = Vector3.zero;
-    //     //&& (Math.Abs(Input.GetAxisRaw("Vertical")) > 0.1f || Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.1f)
-    //     if(isGliding && (Math.Abs(Input.GetAxisRaw("Vertical")) > 0.1f))
-    //     {   
-    //         Debug.Log("Gliding");
-    //         playerVelocity.y += glideDescSpeed * Time.deltaTime;
-    //         playerVelocity += transform.forward * glidePropulsion* Time.deltaTime;
-    //         //propulsion = this.transform.forward *glidePropulsion;
-    //     }
-    //     controller.Move((playerVelocity+propulsion) * Time.deltaTime);
-   
-    // }
-        void Update()
+    void Update()
     {
         groundedPlayer = controller.isGrounded;
 
