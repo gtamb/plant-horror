@@ -41,6 +41,7 @@ public class SwitchCameras : MonoBehaviour
         {
             player.SetActive(false);
             keypadCamera.SetActive(true);
+            
         }
         else
         {
@@ -53,16 +54,20 @@ public class SwitchCameras : MonoBehaviour
     {
         // Example input handling to switch cameras
         internalDistance = Raycasting.distanceFromTarget;
-        if (KeypadUnlocked == false && internalDistance < 4.0f)
+       // bool canSwitch = KeypadUnlocked == false && internalDistance < 4.0f;
+
+        bool canSwitch = internalDistance <= 3.0f && Raycasting.layerName == "Keypad" && !KeypadCameraActive;
+
+        if (player != null)
+           // interactPrompt.SetActive(canSwitch);
+            player.GetComponent<PlayerMovement>().interactPrompt.SetActive(canSwitch);
+
+        if (canSwitch &&  Input.GetKeyDown(KeyCode.E))
         {
-            // switch to keypad camera
-            // NOTE: collider for keypad object is not viewable from ground in testing so temp collider
-            if (Raycasting.layerName == "Keypad" && Input.GetKeyDown(KeyCode.E))
-            {
-                Debug.Log("Switching to Keypad Camera");
-                KeypadCameraActive = true;
-                SwitchToKeypadCamera(true);
-            }
+            Debug.Log("Switching to Keypad Camera");
+            KeypadCameraActive = true;
+            SwitchToKeypadCamera(true);
+            
 
         }
 
